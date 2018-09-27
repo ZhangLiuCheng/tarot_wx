@@ -1,0 +1,13 @@
+<!--pages/way/way.wxml-->
+<scroll-view class='bg'>
+  <image class='bg-image' src='/images/bg.jpg' lazy-load='true' mode='aspectFill'></image>
+</scroll-view>
+
+<view class='container'>
+  <view class='nav'>
+    <image class='nav_back' src='/images/back.png' catchtap='back'></image>
+    <text class='nav_title'>有缘人占卜法</text>
+  </view>
+
+  <text>适宜寻找什么样的男朋友、女朋友，让有缘人牌阵来帮你吧，先让塔罗帮助做好准备，再出发</text>
+</view>

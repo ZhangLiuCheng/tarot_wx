@@ -1,0 +1,31 @@
+<!--index.wxml-->
+
+<scroll-view class='bg'>
+  <image class='bg-image' src='/images/bg.jpg' lazy-load='true' mode='aspectFill'></image>
+</scroll-view>
+
+<view class="container">
+  <text class='title'>爱情塔罗占卜</text>
+
+  <!-- ==========首页========== -->
+  <view class='body_main' hidden='{{showWay}}'>
+
+    <view class='info'>
+      <text class='info_txt1'>如何静心冥想？\n找一个舒服的姿势闭上眼睛深呼吸，屏除心中杂念，专心在想要寻找答案的问题上。通常会有其他声音出现，可能是家人、朋友或同事，感谢他并放下。直到剩下自己的声音，这时就准备好抽牌了。\n\n</text>
+      <text class='info_txt1'>什么样的状况不适合占卜？\n身体健康，心有定见，是非伦理。过往经验，上述三点并不适合占卜。</text>
+    </view>
+
+    <button class='btn_start' catchtap='start'>静心冥想，开始占卜</button>
+  </view>
+
+  <!-- ==========选择方法========== -->
+
+  <view class='body_way' hidden='{{!showWay}}'>
+
+    <button class='btn_way_yy' catchtap='friend'>有缘人牌阵</button>
+    <text class='way_txt'>用于未来爱人的占卜,适合寻找意中人 & 有缘人</text>
+
+    <button class='btn_way_lr' catchtap='lover'>恋人金字塔</button>
+    <text class='way_txt'>恋人金字塔牌阵简洁直接,适合占卜恋人关系 & 互动解析</text>
+  </view>
+</view>
