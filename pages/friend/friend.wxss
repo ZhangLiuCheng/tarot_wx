@@ -3,11 +3,9 @@
 .container {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .nav {
@@ -28,6 +26,70 @@
   margin-right: 84rpx;
   flex: 1;
   font-size: 40rpx;
-  color:#FFF;
+  color: #fff;
   text-align: center;
+}
+
+.info_txt {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 16rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.pai {
+  width: 90%;
+  height: 700rpx;
+  margin-left: 5%;
+  margin-top: 60rpx;
+  position: relative;
+}
+
+.item {
+  width: 180rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_img {
+  width: 100%;
+  height: 220rpx;
+}
+
+.item_txt {
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.i2 {
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+}
+
+.i3 {
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.i4 {
+  position: absolute;
+  left: 0rpx;
+  top: 400rpx;
+}
+
+.i5 {
+  position: absolute;
+  right: 0rpx;
+  top: 400rpx;
+}
+
+.btn_start {
+  width: 60%;
+  margin-top: 100rpx;
 }

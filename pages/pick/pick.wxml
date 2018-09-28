@@ -1,0 +1,6 @@
+<!--pages/pick/pick.wxml-->
+<view class='rank' wx:if='{{modalHidden != true}}' catchtouchmove='touchmove'>
+  <view class='modal'>
+    <text>pages/pick/pick.wxml</text>
+  </view>
+</view>

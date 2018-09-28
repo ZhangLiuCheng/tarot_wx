@@ -1,14 +1,9 @@
 /**app.wxss**/
-.bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
 .bg-image {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  animation: bg 5s infinite;
+  width: 100vw;
+  height: 100vh;
+  animation: bg 8s infinite;
 }
 
 @keyframes bg {

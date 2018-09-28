@@ -1,8 +1,7 @@
 <!--index.wxml-->
 
-<scroll-view class='bg'>
-  <image class='bg-image' src='/images/bg.jpg' lazy-load='true' mode='aspectFill'></image>
-</scroll-view>
+
+<image class='bg-image' src='/images/bg.jpg' lazy-load='false' mode='aspectFill'></image>
 
 <view class="container">
   <text class='title'>爱情塔罗占卜</text>

@@ -1,7 +1,7 @@
 <!--pages/way/way.wxml-->
-<scroll-view class='bg'>
-  <image class='bg-image' src='/images/bg.jpg' lazy-load='true' mode='aspectFill'></image>
-</scroll-view>
+
+<image class='bg-image' src='/images/bg.jpg' lazy-load='false' mode='aspectFill'></image>
+
 
 <view class='container'>
   <view class='nav'>
@@ -9,5 +9,37 @@
     <text class='nav_title'>有缘人占卜法</text>
   </view>
 
-  <text>适宜寻找什么样的男朋友、女朋友，让有缘人牌阵来帮你吧，先让塔罗帮助做好准备，再出发</text>
+  <text class='info_txt'>适宜寻找什么样的男朋友、女朋友，让有缘人牌阵来帮你吧，先让塔罗帮助做好准备，再出发</text>
+
+  <view class='pai'>
+
+    <view class='item'>
+      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <text class='item_txt'>代表你希望追求的对象</text>
+    </view>
+
+    <view class='item i2'>
+      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <text class='item_txt'>代表你不喜欢的对象</text>
+    </view>
+
+    <view class='item i3'>
+      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <text class='item_txt'>代表你现在的心情、处境</text>
+    </view>
+
+    <view class='item i4'>
+      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <text class='item_txt'>代表该采取的行动</text>
+    </view>
+
+    <view class='item i5'>
+      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <text class='item_txt'>代表未来发展、最后结果</text>
+    </view>
+  </view>
+
+  <button class='btn_start' catchtap='pickPai'>开始占卜</button>
 </view>
+
+<pickModal id="pickModal"></pickModal>
