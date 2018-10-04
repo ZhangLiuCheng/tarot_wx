@@ -14,32 +14,32 @@
   <view class='pai'>
 
     <view class='item'>
-      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <image class='item_img' src='{{paiImgs[0].img}}'></image>
       <text class='item_txt'>代表你希望追求的对象</text>
     </view>
 
     <view class='item i2'>
-      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <image class='item_img' src='{{paiImgs[1].img}}'></image>
       <text class='item_txt'>代表你不喜欢的对象</text>
     </view>
 
     <view class='item i3'>
-      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <image class='item_img' src='{{paiImgs[2].img}}'></image>
       <text class='item_txt'>代表你现在的心情、处境</text>
     </view>
 
     <view class='item i4'>
-      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <image class='item_img' src='{{paiImgs[3].img}}'></image>
       <text class='item_txt'>代表该采取的行动</text>
     </view>
 
     <view class='item i5'>
-      <image class='item_img' src='/images/pai_beimian.png'></image>
+      <image class='item_img' src='{{paiImgs[4].img}}'></image>
       <text class='item_txt'>代表未来发展、最后结果</text>
     </view>
   </view>
 
-  <button class='btn_start' catchtap='pickPai'>开始占卜</button>
+  <button class='btn_start' catchtap='pickPai'>{{btnTxt}}</button>
 </view>
 
 <pickModal id="pickModal"></pickModal>

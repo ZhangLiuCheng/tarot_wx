@@ -1,6 +1,25 @@
 <!--pages/pick/pick.wxml-->
 <view class='rank' wx:if='{{modalHidden != true}}' catchtouchmove='touchmove'>
-  <view class='modal'>
+  <!-- <view class='modal'>
     <text>pages/pick/pick.wxml</text>
+  </view> -->
+
+  <image class='close' src='/images/close.png' catchtap='close'></image>
+
+  <view class='pai'>
+    <view class='pai1' wx:for="{{pai1}}" wx:for-index="idx" wx:for-item="item" wx:key="*this">
+      <image class="item_img {{item.checked ? 'item_img_check' : ''}}" catchtap='pai' style="left:{{idx *20}}rpx;" data-item="{{item}}" src='/images/pai_beimian.png'></image>
+    </view>
+
+    <view class='pai2' wx:for="{{pai2}}" wx:for-index="idx" wx:for-item="item" wx:key="*this">
+      <image class="item_img {{item.checked ? 'item_img_check' : ''}}" catchtap='pai' style="left:{{idx *20}}rpx;" data-item="{{item}}" src='/images/pai_beimian.png'></image>
+    </view>
+
+    <view class='pai3' wx:for="{{pai3}}" wx:for-index="idx" wx:for-item="item" wx:key="*this">
+      <image class="item_img {{item.checked ? 'item_img_check' : ''}}" catchtap='pai' style="left:{{idx *20}}rpx;" data-item="{{item}}" src='/images/pai_beimian.png'></image>
+    </view>
   </view>
+
+  <button class='btn_confirm' catchtap='confirm' disabled='{{confirmDisabled}}'>{{confirmText}}</button>
+
 </view>

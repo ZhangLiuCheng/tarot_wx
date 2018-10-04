@@ -1,0 +1,8 @@
+<!--pages/result/result.wxml-->
+<image class='bg-image' src='/images/bg.jpg' lazy-load='false' mode='aspectFill'></image>
+<view class='container'>
+  <view class='nav'>
+    <image class='nav_back' src='/images/back.png' catchtap='back'></image>
+    <text class='nav_title'>有缘人占卜法</text>
+  </view>
+</view>
