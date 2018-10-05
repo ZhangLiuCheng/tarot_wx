@@ -24,6 +24,8 @@ Page({
   },
 
   lover: function () {
-
+    wx.navigateTo({
+      url: '../lover/lover',
+    })
   }
 })

@@ -50,3 +50,7 @@
     transform: scale(1);
   }
 }
+
+.img_inverse {
+  transform: rotate(180deg);
+}

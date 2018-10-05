@@ -34,8 +34,22 @@
   margin-top: 20rpx;
 }
 
+.item_view_img {
+  display: flex;
+  flex-direction: column;
+}
+
 .item_img {
   width: 180rpx;
   height: 220rpx;
   border:2rpx solid white;
+}
+
+.item_name {
+  width: 180rpx;
+  font-weight: bold;
+  color:#FFF;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  text-align: center;
 }

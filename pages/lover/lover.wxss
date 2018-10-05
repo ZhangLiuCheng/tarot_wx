@@ -1,4 +1,4 @@
-/* pages/way/way.wxss */
+/* pages/lover/lover.wxss */
 
 .info_txt {
   width: 92%;
@@ -37,29 +37,29 @@
   color: #fff;
 }
 
+.i1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
 .i2 {
   position: absolute;
-  right: 0rpx;
-  top: 0rpx;
+  top: 350rpx;
+  left: 0rpx;
 }
 
 .i3 {
   position: absolute;
-  top: 200rpx;
+  top: 350rpx;
   left: 50%;
   transform: translateX(-50%)
 }
 
 .i4 {
   position: absolute;
-  left: 0rpx;
-  top: 400rpx;
-}
-
-.i5 {
-  position: absolute;
   right: 0rpx;
-  top: 400rpx;
+  top: 350rpx;
 }
 
 .btn_start {

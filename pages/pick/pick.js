@@ -11,7 +11,7 @@ Component({
     pai1: null,
     pai2: null,
     pai3: null,
-    totalPai: 5,
+    totalPai: 0,
     confirmText: "确认",
     confirmDisabled: true
   },
@@ -21,6 +21,12 @@ Component({
   },
 
   methods: {
+    setPaiLen: function (len) {
+      this.setData({
+        totalPai: len
+      })
+    },
+
     show: function () {
       this.initData();
       this.setData({

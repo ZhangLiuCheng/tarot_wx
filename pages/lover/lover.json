@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "pickModal": "../pick/pick"
+  },
+  "disableScroll": true
+}

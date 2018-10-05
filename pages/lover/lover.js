@@ -1,28 +1,26 @@
-// pages/way/way.js
-// var constant = require("../../utils/constant.js");
-var explain = require("../../utils/explain.js");
+// pages/lover/lover.js
 
+var explain = require("../../utils/explain.js");
 
 Page({
 
   data: {
     status: 0,
-    paiTxt: ["代表你希望追求的对象", 
-             "代表你不喜欢的对象", 
-             "代表你现在的心情、处境", 
-             "代表该采取的行动", 
-             "代表未来发展、最后结果"],
+    paiTxt: ["你们未来的发展",
+      "代表你的恋人",
+      "代表你自己",
+      "你们彼此的关系"],
     paiImgs: null,
     btnTxt: "开始占卜"
   },
 
   onLoad: function (options) {
     this.pickModal = this.selectComponent("#pickModal");
-    this.pickModal.setPaiLen(5);
+    this.pickModal.setPaiLen(4);
     this.pickModal.setPickPaiListener(this.pickPaiFinish)
 
     let paiData = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {
       let item = {
         img: "/images/pai_beimian.png",
         front: true
@@ -52,7 +50,7 @@ Page({
       this.pickModal.show();
     } else {
       let result = {
-        title: "有缘人占卜法",
+        title: "恋人金字塔",
         pai: this.data.paiImgs
       }
       getApp().globalData.result = result;
@@ -67,12 +65,12 @@ Page({
   pickPaiFinish: function () {
     this.data.status = 1;
     let seed = [];
-    for (let i = 0; i < 78; i ++) {
+    for (let i = 0; i < 78; i++) {
       seed.push(i);
     }
     let content = explain.content;
     let newPai = [];
-    for (let i = 0; i < 5; i ++) {
+    for (let i = 0; i < 4; i++) {
       let random_img = Math.floor(Math.random() * seed.length);
       let random_front = Math.floor(Math.random() * 2)
 
@@ -93,7 +91,7 @@ Page({
 
     this.setData({
       paiImgs: newPai,
-      btnTxt : "查看结果"
+      btnTxt: "查看结果"
     })
   },
 })

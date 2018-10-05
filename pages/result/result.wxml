@@ -13,7 +13,11 @@
           <text class='item_txt'>{{item.txt}}</text>
           <text class='item_brief'>{{item.brief}}</text>
         </view>
-        <image class='item_img' src='{{item.img}}'></image>
+
+        <view class='item_view_img'>
+          <image class="item_img {{item.front ? '': 'img_inverse'}}" src='{{item.img}}'></image>
+          <text class='item_name'>{{item.name}}({{item.front ? '正位' : '逆位'}})</text>
+        </view>
       </view>
     </block>
   </scroll-view>
