@@ -3,6 +3,18 @@
 <view class='container'>
   <view class='nav'>
     <image class='nav_back' src='/images/back.png' catchtap='back'></image>
-    <text class='nav_title'>有缘人占卜法</text>
+    <text class='nav_title'>{{title}}</text>
   </view>
+
+  <scroll-view scroll-y class='scrollview'>
+    <block wx:for="{{pai}}" wx:key="id">
+      <view class='item'>
+        <view class='item_view_txt'>
+          <text class='item_txt'>{{item.txt}}</text>
+          <text class='item_brief'>{{item.brief}}</text>
+        </view>
+        <image class='item_img' src='{{item.img}}'></image>
+      </view>
+    </block>
+  </scroll-view>
 </view>

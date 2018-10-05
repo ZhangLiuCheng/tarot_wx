@@ -1,10 +1,17 @@
 // pages/way/way.js
-var constant = require("../../utils/constant.js");
+// var constant = require("../../utils/constant.js");
+var explain = require("../../utils/explain.js");
+
 
 Page({
 
   data: {
     status: 0,
+    paiTxt: ["代表你希望追求的对象", 
+             "代表你不喜欢的对象", 
+             "代表你现在的心情、处境", 
+             "代表该采取的行动", 
+             "代表未来发展、最后结果"],
     paiImgs: null,
     btnTxt: "开始占卜"
   },
@@ -43,6 +50,12 @@ Page({
     if (this.data.status == 0) {
       this.pickModal.show();
     } else {
+      let result = {
+        title: "有缘人占卜法",
+        pai: this.data.paiImgs
+      }
+      getApp().globalData.result = result;
+      this.data.paiImgs
       wx.navigateTo({
         url: '../result/result',
       })
@@ -56,21 +69,27 @@ Page({
     for (let i = 0; i < 78; i ++) {
       seed.push(i);
     }
-    let imgs = constant.imgs;
+    let content = explain.content;
     let newPai = [];
     for (let i = 0; i < 5; i ++) {
       let random_img = Math.floor(Math.random() * seed.length);
       let random_front = Math.floor(Math.random() * 2)
 
       let ri = seed[random_img];
-      seed.slice(random_img, 1);
+      seed.splice(random_img, 1);
 
+      let oriCon = content[ri];
       let item = {
-        img: constant.imgHost + imgs[ri],
+        id: ri,
+        name: oriCon.name,
+        txt: this.data.paiTxt[i],
+        img: explain.imgHost + oriCon.img + ".png",
         front: random_front == 0
       }
+      item.brief = random_front == 0 ? oriCon.front : oriCon.behind;
       newPai.push(item);
     }
+
     this.setData({
       paiImgs: newPai,
       btnTxt : "查看结果"

@@ -73,7 +73,7 @@ var imgs = [
   "xingbi_huanghou.png",
   "xingbi_qishi.png",
   "xingbi_shiwei.png",
-  "xing.png",   
+  "xingxing.png",   
   "xuandiaozhe.png",
   "yinshi.png",
   "yueliang.png",

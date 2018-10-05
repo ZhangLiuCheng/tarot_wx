@@ -1,1 +1,41 @@
 /* pages/result/result.wxss */
+
+.scrollview {
+  width: 100%;
+  
+  /* flex: 1; */
+  height: calc(100% - 154rpx);
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.item_view_txt {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.item_txt {
+  color:#FaFF0D;
+  font-size: 36rpx;
+}
+
+.item_brief {
+  color:#FFF;
+  font-size: 32rpx;
+  flex: 1;
+  margin-top: 20rpx;
+}
+
+.item_img {
+  width: 180rpx;
+  height: 220rpx;
+  border:2rpx solid white;
+}
